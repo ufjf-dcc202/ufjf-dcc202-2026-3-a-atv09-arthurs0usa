@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo00</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        ul
+        {
+            list-style:none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        ul> li{
+            border: 1px solid green;
+            background-color: lightgreen;
+        }
+
+        .deconstructed-pancake {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .deconstructed-pancake > * {
+            width: 120px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
 </head>
 <body>
     <main>
         <article>
-            <h1>DCC 202 Super Centered</h1>
+            <ul class="deconstructed-pancake">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li> 
+                <li>Item 4</li>
+            </ul>
         </article>
     </main>
     
